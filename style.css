@@ -24,9 +24,22 @@ body {
   border-radius:20px;
 }
 
-.containers{
-  background-image:url('img.jpg')!important;
+
+
+/* Media query for screens less than 500px */
+@media screen and (max-width: 500px) {
+  
+  .cards {
+    text-align: center; /* Center the cards horizontally */
+  }
+
+  .col-lg-4 {
+    width: 100%; /* Make the columns take up the full width of the screen */
+  }
+
+  /* You can add additional styles specific to smaller screens here */
 }
+
 /* Add this CSS to your stylesheet */
 .square-image {
   width: 200px; /* Adjust to your desired width */
