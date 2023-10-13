@@ -1,0 +1,230 @@
+/* Global styles */
+body {
+    
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* replace this with your desired background color */
+    background-color: blueviolet;
+ 
+      
+}
+.navbar-brand:hover {
+  text-decoration: none!important;
+}
+.nav-link:hover{
+  text-decoration: none!important;
+}
+#search{
+  width:200px;
+  height:30px;
+  border-radius:20px;
+}
+
+.containers{
+  background-image:url('img.jpg')!important;
+}
+/* Add this CSS to your stylesheet */
+.square-image {
+  width: 200px; /* Adjust to your desired width */
+  height: 200px; /* Adjust to your desired height (should be the same as width) */
+  object-fit: cover; /* Optional: Ensure the image fills the square without stretching */
+  border-radius: 20px;
+}
+
+/* Add this CSS to your stylesheet */
+.card {
+  border: none; /* Remove card borders */
+  margin: 10px; /* Add margin for spacing between cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */;
+
+  /* Optional hover effect */
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Optional: Enlarge the card on hover */
+}
+
+.cards{
+  border: none !important;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.cards-body{
+  padding: 0;
+}
+.card-text p{
+font-weight: 400;
+}
+.card-img-overlay{
+  opacity: 0;
+}
+.card-img-overlay:hover{
+  opacity: 0.2;
+  background-color: white;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+header {
+    
+
+    box-shadow: 0 2px 4px rgba(224, 211, 211, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+/* Main content styles */
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Contact form styles */
+.contact-form-container {
+   
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .contact-form {
+    border-width: 40%;
+    border-style: dashed;
+    border: 4px solid #b8bba5;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-bottom: 10px;
+  }
+
+form input[type="text"],
+form input[type="email"],
+
+textarea {
+    width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+    height: 150px;
+}
+
+#send {
+    background-color:  #5b9de4;
+    border: 5 cap;
+    color: #fff; 
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+#send:hover{
+    background-color:grey;
+    
+}
+
+/* Footer styles */
+footer {
+    background-color: #555;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+button {
+    background-color: #4CAF50;
+
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+  }
+  button:hover {
+    background-color: grey;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: blue;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+  }
+
+
